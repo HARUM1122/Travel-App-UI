@@ -96,7 +96,7 @@ fun HomeScreen() {
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.Bottom
+            verticalAlignment = Alignment.Bottom,
         ) {
             Text(
                 "Popular Places",
@@ -150,8 +150,7 @@ fun HomeScreen() {
 fun PlacesListView(places: List<PlaceModel>) {
     LazyRow(
         modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp),
+            .fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         items(places) { place ->
